@@ -20,6 +20,7 @@ services:
       - backend.env
     environment:
       - DASHBOARD_URL=http://onlinestore-saleorplatform-bqoa8n-4a24eb-77-90-52-196.traefik.me/
+      - ALLOWED_HOSTS=localhost,api,onlinestore-saleorplatform-bqoa8n-40320d-77-90-52-196.traefik.me
       - ALLOWED_HOSTS=localhost,api
 
   dashboard:
