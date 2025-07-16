@@ -27,9 +27,9 @@ services:
     ports:
       - 9000:80
     networks:
-    - saleor-backend-tier
-  environment:
-    - API_URI=http://api:8000/graphql/
+      - saleor-backend-tier
+    environment:
+      - API_URI=http://api:8000/graphql/
 
   db:
     image: library/postgres:15-alpine
