@@ -26,9 +26,10 @@ services:
     image: ghcr.io/saleor/saleor-dashboard:latest
     ports:
       - 9000:80
-    restart: unless-stopped
-    environment:
-      - API_URI=http://onlinestore-saleorplatform-bqoa8n-40320d-77-90-52-196.traefik.me/graphql/
+    networks:
+    - saleor-backend-tier
+  environment:
+    - API_URI=http://api:8000/graphql/
 
   db:
     image: library/postgres:15-alpine
