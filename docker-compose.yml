@@ -29,7 +29,7 @@ services:
     networks:
       - saleor-backend-tier
     environment:
-      - API_URL=https://onlinestore-saleorplatform-bqoa8n-40320d-77-90-52-196.traefik.me/graphql/
+      - API_URL=http://onlinestore-saleorplatform-bqoa8n-40320d-77-90-52-196.traefik.me/graphql/
 
   db:
     image: library/postgres:15-alpine
